@@ -23,7 +23,7 @@ const Navbar = () => (
             </li>
           </ul>
           <ul className="nav navbar-nav navbar-right">
-            <li><Link to="/login">Log out</Link></li>
+            <li><Link to="/logout">Log out</Link></li>
           </ul>
         </div>
       ) : (

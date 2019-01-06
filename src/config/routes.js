@@ -13,6 +13,7 @@ import Favorites from "../components/Favorites";
 import All from "../components/All";
 import Home from "../components/Home";
 import Login from "../components/common/LoginForm";
+import Logout from "../components/Logout";
 import Register from "../components/common/RegisterForm";
 
 export default (store, history) => {
@@ -43,6 +44,7 @@ export default (store, history) => {
         <Route path="all" component={All} onEnter={requireAuth} />
         <Route path="favorites" component={Favorites} onEnter={requireAuth} />
         <Route path="login" component={Login} />
+        <Route path="logout" component={Logout} />
         <Route path="register" component={Register} />
         <IndexRoute component={Index} />
       </Route>
