@@ -1,5 +1,4 @@
 import axios from "axios";
-// import Auth from "../modules/Auth";
 import Transport from "../modules/Transport";
 
 class UrlApi {

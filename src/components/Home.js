@@ -11,9 +11,9 @@ class Home extends Component {
   constructor(props, context) {
     super(props, context);
 
-    this.state = {
-      urls: Object.assign([], this.props.urls)
-    };
+    // this.state = {
+    //   urls: Object.assign([], this.props.urls)
+    // };
 
     // list view test.
     // const data = [];
@@ -36,17 +36,17 @@ class Home extends Component {
     ));
   }
   render() {
-    const that = this;
-    const dragProps = {
-      onDragEnd(fromIndex, toIndex) {
-        const { data } = that.state;
-        const item = data.splice(fromIndex, 1)[0];
-        data.splice(toIndex, 0, item);
-        that.setState({ data });
-      },
-      nodeSelector: 'li',
-      handleSelector: 'a'
-    };
+    // const that = this;
+    // const dragProps = {
+    //   onDragEnd(fromIndex, toIndex) {
+    //     const { data } = that.state;
+    //     const item = data.splice(fromIndex, 1)[0];
+    //     data.splice(toIndex, 0, item);
+    //     that.setState({ data });
+    //   },
+    //   nodeSelector: 'li',
+    //   handleSelector: 'a'
+    // };
 
     return (
       <div className="container">
